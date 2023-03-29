@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# Define the packages to install
+packages=(
+"yarn"
+# vercel
+"vercel"
+"turbo"
+# vscode
+"yo generator-code"
+# github
+"@githubnext/github-copilot-cli"
+)
+
 # Define color codes for echoing messages
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -32,18 +44,6 @@ else
 fi
 
 echo $divider
-
-# Define the packages to install
-packages=(
-"yarn"
-# vercel
-"vercel"
-"turbo"
-# vscode
-"yo generator-code"
-# github
-"@githubnext/github-copilot-cli"
-)
 
 # Check if the -u flag is present, uninstall packages if necessary
 if [ "$1" == "-u" ]; then
