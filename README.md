@@ -1,5 +1,7 @@
 # ppm (pnpm Package Manager)
 
+![example](images/example.png)
+
 ## Description
 
 This repository contains a command-line tool called `ppm` (pnpm Package Manager) to automate the installation and uninstallation of common development tools and packages. The script checks your Node.js version and installs packages using pnpm if the Node.js version is 16.14 or higher, otherwise, it uses npm for installation.
